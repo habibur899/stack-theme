@@ -49,7 +49,7 @@ function stack_theme_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-menu' => esc_html__( 'Main Menu', 'stack' ),
+			'main-menu' => esc_html__( 'Main Menu', 'stack' ),
 		)
 	);
 
@@ -129,8 +129,8 @@ function stack_widgets_init() {
 			'description'   => esc_html__( 'Add widgets here.', 'stack' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h4 class="widget-title">',
+			'after_title'   => '</h4>',
 		)
 	);
 }
@@ -141,10 +141,34 @@ add_action( 'widgets_init', 'stack_widgets_init' );
  * Enqueue scripts and styles.
  */
 function stack_scripts() {
+	//Css
+	wp_enqueue_style( 'stack-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-line-icons', get_template_directory_uri() . '/assets/fonts/line-icons.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-slicknav', get_template_directory_uri() . '/assets/css/slicknav.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-owl-carousel', get_template_directory_uri() . '/assets/css/owl.carousel.min.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-owl-theme', get_template_directory_uri() . '/assets/css/owl.theme.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-magnific-popup', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-nivo-lightbox', get_template_directory_uri() . '/assets/css/nivo-lightbox.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-animate', get_template_directory_uri() . '/assets/css/animate.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-main', get_template_directory_uri() . '/assets/css/main.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'stack-responsive', get_template_directory_uri() . '/assets/css/responsive.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'stack-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_style_add_data( 'stack-style', 'rtl', 'replace' );
 
-	wp_enqueue_script( 'stack-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	//Js
+	wp_enqueue_script( 'stack-popper-js', get_template_directory_uri() . '/assets/js/popper.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-mixitup-js', get_template_directory_uri() . '/assets/js/jquery.mixitup.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-wow-js', get_template_directory_uri() . '/assets/js/wow.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-nav-js', get_template_directory_uri() . '/assets/js/jquery.nav.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-scrolling-js', get_template_directory_uri() . '/assets/js/scrolling-nav.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-easing-js', get_template_directory_uri() . '/assets/js/jquery.easing.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-counterup-js', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-lightbox-js', get_template_directory_uri() . '/assets/js/nivo-lightbox.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-magnific-js', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-waypoints-js', get_template_directory_uri() . '/assets/js/waypoints.min.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-slicknav-js', get_template_directory_uri() . '/assets/js/jquery.slicknav.js', array( 'jquery' ), _S_VERSION, true );
+	wp_enqueue_script( 'stack-main-js', get_template_directory_uri() . '/assets/js/main.js', array( 'jquery' ), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -154,10 +178,10 @@ function stack_scripts() {
 add_action( 'wp_enqueue_scripts', 'stack_scripts' );
 
 
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
+
+require_once get_template_directory() . '/inc/template-functions.php';
+require_once get_template_directory() . '/inc/customizer/customizer.php';
+require_once get_template_directory() . '/inc/tgm/tgm-active.php';
 
 
 
