@@ -18,3 +18,7 @@ require_once get_template_directory().'/inc/customizer/price.php';
 require_once get_template_directory().'/inc/customizer/skill.php';
 require_once get_template_directory().'/inc/customizer/work.php';
 require_once get_template_directory().'/inc/customizer/testimonial.php';
+require_once get_template_directory().'/inc/customizer/blog.php';
+require_once get_template_directory().'/inc/customizer/client.php';
+require_once get_template_directory().'/inc/customizer/footer.php';
+require_once get_template_directory().'/inc/customizer/copyright.php';

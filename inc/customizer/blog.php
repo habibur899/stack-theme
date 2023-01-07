@@ -23,7 +23,7 @@ new \Kirki\Field\Checkbox_Switch(
 );
 new \Kirki\Field\Text(
 	[
-		'settings' => 'blog_heading',
+		'settings' => 'blog_title',
 		'label'    => esc_html__( 'Blog Title', 'stack' ),
 		'section'  => 'blog_section',
 		'default'  => esc_html__( 'LATEST BLOG', 'stack' ),
@@ -33,7 +33,7 @@ new \Kirki\Field\Text(
 
 new \Kirki\Field\Textarea(
 	[
-		'settings' => 'blog_sub_heading',
+		'settings' => 'blog_sub_title',
 		'label'    => esc_html__( 'Blog Sub Title', 'stack' ),
 		'section'  => 'blog_section',
 		'default'  => esc_html__( 'A desire to help and empower others between community contributors in technology
