@@ -11,10 +11,10 @@
             <div class="row">
                 <div class="col-md-12 col-sm-12">
                     <div class="contents text-center">
-                        <h2 class="head-title wow fadeInUp"><?php echo esc_html__( get_theme_mod( 'banner_heading_text' ), 'stack' ) ?></h2>
+                        <h2 class="head-title wow fadeInUp"><?php echo esc_html( get_theme_mod( 'banner_heading_text' ) ) ?></h2>
                         <div class="header-button wow fadeInUp" data-wow-delay="0.3s">
                             <a href="<?php echo esc_url( get_theme_mod( 'hero_button_url' ) ) ?>"
-                               class="hero-button-text btn btn-common"><?php echo esc_html__( get_theme_mod( 'hero_button_text' ), 'stack' ) ?></a>
+                               class="hero-button-text btn btn-common"><?php echo esc_html( get_theme_mod( 'hero_button_text' ) ) ?></a>
                         </div>
                     </div>
                     <div class="img-thumb text-center wow fadeInUp" data-wow-delay="0.6s">
@@ -41,10 +41,10 @@ if ( get_theme_mod( 'about_show_hide', 'on' ) == true ) {
                     <div class="text-wrapper">
                         <div>
                             <h2 class="title-hl wow fadeInLeft"
-                                data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'about_heading' ), 'stack' ) ?></h2>
-                            <p class="mb-4"><?php echo esc_html__( get_theme_mod( 'about_description' ), 'stack' ) ?></p>
+                                data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'about_heading' ) ) ?></h2>
+                            <p class="mb-4"><?php echo esc_html( get_theme_mod( 'about_description' ) ) ?></p>
                             <a href="<?php echo esc_url( get_theme_mod( 'about_button_url' ) ) ?>"
-                               class="btn btn-common"><?php echo esc_html__( get_theme_mod( 'about_button_text' ), 'stack' ) ?></a>
+                               class="btn btn-common"><?php echo esc_html( get_theme_mod( 'about_button_text' ) ) ?></a>
                         </div>
                     </div>
                 </div>
@@ -61,8 +61,8 @@ if ( get_theme_mod( 'about_show_hide', 'on' ) == true ) {
                                         <i class="<?php echo esc_attr( $about_feature['icon_class'] ) ?>"></i>
                                     </div>
                                     <div class="feature-content">
-                                        <h3><?php echo esc_html__( $about_feature['feature_heading'], 'stack' ) ?></h3>
-                                        <p><?php echo esc_html__( $about_feature['description'], 'stack' ) ?></p>
+                                        <h3><?php echo esc_html( $about_feature['feature_heading'], 'stack' ) ?></h3>
+                                        <p><?php echo esc_html( $about_feature['description'], 'stack' ) ?></p>
                                     </div>
                                 </div>
 							<?php }
@@ -81,8 +81,8 @@ if ( get_theme_mod( 'about_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'service_heading' ), 'stack' ) ?></h2>
-                <p><?php echo esc_html__( get_theme_mod( 'service_sub_heading' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'service_heading' ) ) ?></h2>
+                <p><?php echo esc_html( get_theme_mod( 'service_sub_heading' ) ) ?></p>
             </div>
             <div class="row">
 				<?php $service_lists = get_theme_mod( 'all_service' );
@@ -97,9 +97,9 @@ if ( get_theme_mod( 'about_show_hide', 'on' ) == true ) {
                                 </div>
                                 <div class="services-content">
                                     <h3>
-                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php echo esc_html__( $service_list['ser_heading'], 'stack' ) ?></a>
+                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php echo esc_html( $service_list['ser_heading'], 'stack' ) ?></a>
                                     </h3>
-                                    <p><?php echo esc_html__( $service_list['description'], 'stack' ) ?></p>
+                                    <p><?php echo esc_html( $service_list['description'], 'stack' ) ?></p>
                                 </div>
                             </div>
                         </div>
@@ -125,7 +125,7 @@ if ( get_theme_mod( 'video_show_hide', 'on' ) == true ) {
                         <a href="<?php echo esc_url( get_theme_mod( 'video_link' ) ) ?>" class="video-popup"><i
                                     class="lni-film-play"></i></a>
                         <h2 class="mt-3 wow zoomIn" data-wow-duration="1000ms"
-                            data-wow-delay="100ms"><?php echo esc_html__( get_theme_mod( 'video_heading' ), 'stack' ) ?></h2>
+                            data-wow-delay="100ms"><?php echo esc_html( get_theme_mod( 'video_heading' ) ) ?></h2>
                     </div>
                 </div>
             </div>
@@ -140,8 +140,8 @@ if ( get_theme_mod( 'video_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'team_heading' ), 'stack' ) ?></h2>
-                <p><?php echo esc_html__( get_theme_mod( 'team_subheading' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'team_heading' ) ) ?></h2>
+                <p><?php echo esc_html( get_theme_mod( 'team_subheading' ) ) ?></p>
             </div>
             <div class="row">
 
@@ -196,9 +196,9 @@ if ( get_theme_mod( 'video_show_hide', 'on' ) == true ) {
                                 </div>
                                 <div class="info-text">
                                     <h3>
-                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php echo esc_html__( $team['name'], 'stack' ) ?></a>
+                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php echo esc_html( $team['name'], 'stack' ) ?></a>
                                     </h3>
-                                    <p><?php echo esc_html__( $team['designation'], 'stack' ) ?></p>
+                                    <p><?php echo esc_html( $team['designation'], 'stack' ) ?></p>
                                 </div>
                             </div>
                             <!-- Team Item Ends -->
@@ -234,9 +234,9 @@ if ( get_theme_mod( 'counter_show_hide', 'on' ) == true ) {
                                                     class="<?php echo esc_attr( $counter['icon_class'] ) ?>"></i></div>
                                         <div class="fact-count">
                                             <h3>
-                                                <span class="counter"><?php echo esc_html__( $counter['counter_heading'], 'stack' ) ?></span>
+                                                <span class="counter"><?php echo esc_html( $counter['counter_heading'], 'stack' ) ?></span>
                                             </h3>
-                                            <p><?php echo esc_html__( $counter['sub_heading'], 'stack' ) ?></p>
+                                            <p><?php echo esc_html( $counter['sub_heading'], 'stack' ) ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -260,8 +260,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'price_title' ), 'stack' ) ?></h2>
-                <p><?php echo esc_html__( get_theme_mod( 'price_sub_title' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'price_title' ) ) ?></h2>
+                <p><?php echo esc_html( get_theme_mod( 'price_sub_title' ) ) ?></p>
             </div>
             <div class="row">
 				<?php
@@ -276,22 +276,22 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
 								     echo esc_attr( 'active-tb' );
 							     } ?>" data-wow-delay="1.2s">
                                 <div class="title">
-                                    <h3><?php echo esc_html__( $price['price_heading'], 'stack' ) ?></h3>
+                                    <h3><?php echo esc_html( $price['price_heading'], 'stack' ) ?></h3>
                                 </div>
                                 <div class="pricing-header">
-                                    <p class="price-value"><?php echo esc_html__( $price['price_amount'], 'stack' ) ?>
-                                        <span><?php echo esc_html__( $price['price_time'], 'stack' ) ?></span></p>
+                                    <p class="price-value"><?php echo esc_html( $price['price_amount'], 'stack' ) ?>
+                                        <span><?php echo esc_html( $price['price_time'], 'stack' ) ?></span></p>
                                 </div>
                                 <ul class="description">
-                                    <li><?php echo esc_html__( $price['price_feature_1'], 'stack' ) ?></li>
-                                    <li><?php echo esc_html__( $price['price_feature_2'], 'stack' ) ?></li>
-                                    <li><?php echo esc_html__( $price['price_feature_3'], 'stack' ) ?></li>
-                                    <li><?php echo esc_html__( $price['price_feature_4'], 'stack' ) ?></li>
-                                    <li><?php echo esc_html__( $price['price_feature_5'], 'stack' ) ?></li>
-                                    <li><?php echo esc_html__( $price['price_feature_6'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_1'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_2'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_3'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_4'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_5'], 'stack' ) ?></li>
+                                    <li><?php echo esc_html( $price['price_feature_6'], 'stack' ) ?></li>
                                 </ul>
                                 <a href="<?php echo esc_url( $price['price_button_url'] ) ?>"
-                                   class="btn btn-primary btn-common"><?php echo esc_html__( $price['price_button_text'], 'stack' ) ?></a>
+                                   class="btn btn-primary btn-common"><?php echo esc_html( $price['price_button_text'], 'stack' ) ?></a>
                             </div>
                         </div>
 					<?php }
@@ -313,8 +313,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                 <div class="col-lg-6 col-md-12 col-xs-12 info wow fadeInRight" data-wow-delay="0.3s">
                     <div class="site-heading">
                         <h2 class="section-title">
-                            <span><?php echo esc_html__( get_theme_mod( 'skill_heading' ), 'stack' ) ?></span></h2>
-                        <p><?php echo esc_html__( get_theme_mod( 'skill_description' ), 'stack' ) ?></p>
+                            <span><?php echo esc_html( get_theme_mod( 'skill_heading' ) ) ?></span></h2>
+                        <p><?php echo esc_html( get_theme_mod( 'skill_description' ) ) ?></p>
                     </div>
                     <div class="skills-section">
                         <!-- Progress Bar Start -->
@@ -324,8 +324,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
 							foreach ( $skills as $skill ) {
 								?>
                                 <div class="progress-box">
-                                    <h5><?php echo esc_html__( $skill['skill_heading'], 'stack' ) ?><span
-                                                class="pull-right"><?php echo esc_html__( $skill['number'], 'stack' ) ?>%</span>
+                                    <h5><?php echo esc_html( $skill['skill_heading'], 'stack' ) ?><span
+                                                class="pull-right"><?php echo esc_html( $skill['number'], 'stack' ) ?>%</span>
                                     </h5>
                                     <div class="progress" style="opacity: 1; left: 0px;">
                                         <div class="progress-bar" role="progressbar" data-width="87"
@@ -349,8 +349,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'work_heading' ), 'stack' ) ?></h2>
-                <p><?php echo esc_html__( get_theme_mod( 'work_sub_heading' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'work_heading' ) ) ?></h2>
+                <p><?php echo esc_html( get_theme_mod( 'work_sub_heading' ) ) ?></p>
             </div>
 
             <!-- Portfolio Recent Projects -->
@@ -373,7 +373,7 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                                                        href="<?php echo esc_url( $work['big_image'] ) ?>"><i
                                                                 class="lni-eye item-icon"></i></a>
                                                 </div>
-                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html__( $work['heading'], 'stack' ) ?></a>
+                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html( $work['heading'], 'stack' ) ?></a>
                                             </div>
                                         </div>
                                     </div>
@@ -411,14 +411,14 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                                         </div>
                                         <div class="info">
                                             <h2>
-                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html__( $testimonial['name'], 'stack' ) ?></a>
+                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html( $testimonial['name'], 'stack' ) ?></a>
                                             </h2>
                                             <h3>
-                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html__( $testimonial['designation'], 'stack' ) ?></a>
+                                                <a href="<?php echo esc_url( the_permalink() ) ?>"><?php echo esc_html( $testimonial['designation'], 'stack' ) ?></a>
                                             </h3>
                                         </div>
                                         <div class="content">
-                                            <p class="description"><?php echo esc_html__( $testimonial['content'], 'stack' ) ?></p>
+                                            <p class="description"><?php echo esc_html( $testimonial['content'], 'stack' ) ?></p>
                                         </div>
                                     </div>
                                 </div>
@@ -439,8 +439,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'blog_title' ), 'stack' ) ?></h2>
-                <p><?php esc_html__( get_theme_mod( 'blog_sub_title' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'blog_title' ) ) ?></h2>
+                <p><?php esc_html( get_theme_mod( 'blog_sub_title' ) ) ?></p>
             </div>
             <div class="row">
 				<?php
@@ -465,11 +465,11 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                                 </div>
                                 <div class="blog-item-text">
                                     <h3>
-                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php esc_html__( the_title(), 'stack' ) ?></a>
+                                        <a href="<?php esc_url( the_permalink() ) ?>"><?php esc_html( the_title() ) ?></a>
                                     </h3>
                                     <p><?php echo wp_kses_post( wp_trim_words( get_the_content(), 20, ' ' ) ) ?></p>
                                     <a href="<?php esc_url( the_permalink() ) ?>"
-                                       class="btn btn-common btn-rm"><?php echo esc_html__( get_theme_mod( 'read_more' ), 'stack' ) ?></a>
+                                       class="btn btn-common btn-rm"><?php echo esc_html( get_theme_mod( 'read_more' ) ) ?></a>
                                 </div>
                             </div>
                             <!-- Blog Item Wrapper Ends-->
@@ -490,8 +490,8 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
         <div class="container">
             <div class="section-header text-center">
                 <h2 class="section-title wow fadeInDown"
-                    data-wow-delay="0.3s"><?php echo esc_html__( get_theme_mod( 'client_title' ), 'stack' ) ?></h2>
-                <p><?php echo esc_html__( get_theme_mod( 'client_sub_title' ), 'stack' ) ?></p>
+                    data-wow-delay="0.3s"><?php echo esc_html( get_theme_mod( 'client_title' ) ) ?></h2>
+                <p><?php echo esc_html( get_theme_mod( 'client_sub_title' ) ) ?></p>
             </div>
             <div class="row text-align-">
 				<?php
@@ -529,10 +529,10 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                 <div class="col-md-6 col-lg-6 col-sm-12">
                     <div class="contact-right-area wow fadeIn">
                         <div class="contact-title">
-                            <h1><?php echo esc_html__( get_theme_mod( 'footer_top_title' ), 'stack' ) ?></h1>
-                            <p><?php echo esc_html__( get_theme_mod( 'footer_top_sub_title' ), 'stack' ) ?></p>
+                            <h1><?php echo esc_html( get_theme_mod( 'footer_top_title' ) ) ?></h1>
+                            <p><?php echo esc_html( get_theme_mod( 'footer_top_sub_title' ) ) ?></p>
                         </div>
-                        <h2><?php echo esc_html__( get_theme_mod( 'footer_contact_address_title' ), 'stack' ) ?></h2>
+                        <h2><?php echo esc_html( get_theme_mod( 'footer_contact_address_title' ) ) ?></h2>
                         <div class="contact-right">
 							<?php
 							$all_address = get_theme_mod( 'all_footer_address' );
@@ -543,7 +543,7 @@ if ( get_theme_mod( 'price_show_hide', 'on' ) == true ) {
                                         <div class="contact-icon">
                                             <i class="<?php echo esc_attr( $address['icon'] ) ?>"></i>
                                         </div>
-                                        <p><?php echo esc_html__( $address['address'], 'stack' ) ?></p>
+                                        <p><?php echo esc_html( $address['address'], 'stack' ) ?></p>
                                     </div>
 								<?php }
 							} ?>
