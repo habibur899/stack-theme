@@ -183,6 +183,7 @@ add_action( 'wp_enqueue_scripts', 'stack_scripts' );
 require_once get_template_directory() . '/inc/template-functions.php';
 require_once get_template_directory() . '/inc/customizer/customizer.php';
 require_once get_template_directory() . '/inc/tgm/tgm-active.php';
+require_once get_template_directory() . '/inc/demo-import.php';
 
 
 

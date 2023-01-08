@@ -69,6 +69,10 @@ function stack_register_required_plugins() {
 			'name'      => 'Contact Form 7',
 			'slug'      => 'contact-form-7',
 			'required'  => true,
+		),array(
+			'name'      => 'One Click Demo Import',
+			'slug'      => 'one-click-demo-import',
+			'required'  => false,
 		),
 
 
