@@ -127,8 +127,8 @@ function stack_widgets_init() {
 			'name'          => esc_html__( 'Sidebar', 'stack' ),
 			'id'            => 'main-sidebar',
 			'description'   => esc_html__( 'Add widgets here.', 'stack' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
+			'before_widget' => '<div id="%1$s" class="widget %2$s widget-latest-post single-widget">',
+			'after_widget'  => '</div>',
 			'before_title'  => '<h4 class="widget-title">',
 			'after_title'   => '</h4>',
 		)
@@ -142,6 +142,7 @@ add_action( 'widgets_init', 'stack_widgets_init' );
  */
 function stack_scripts() {
 	//Css
+	wp_enqueue_style( 'stack-font', '//fonts.googleapis.com/css?family=Open+Sans|Titillium+Web:600,700' );
 	wp_enqueue_style( 'stack-bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'stack-line-icons', get_template_directory_uri() . '/assets/fonts/line-icons.css', array(), _S_VERSION, 'all' );
 	wp_enqueue_style( 'stack-slicknav', get_template_directory_uri() . '/assets/css/slicknav.css', array(), _S_VERSION, 'all' );

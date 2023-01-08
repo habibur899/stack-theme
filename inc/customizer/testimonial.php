@@ -25,7 +25,7 @@ new \Kirki\Field\Background(
 	[
 		'settings'    => 'testimonial_background',
 		'label'       => esc_html__( 'Background', 'stack' ),
-		'description' => esc_html__( 'Testimonial background', 'kirki' ),
+		'description' => esc_html__( 'Testimonial background', 'stack' ),
 		'section'     => 'testimonial_section',
 		'default'     => [
 			'background-repeat'     => 'no-repeat',

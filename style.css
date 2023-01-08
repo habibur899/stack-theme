@@ -37,3 +37,187 @@ h3.blog-post-title {
 h2.title-hl {
     max-width: 385px;
 }
+
+/*comment form*/
+.comment-list article {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.comment-author.vcard {
+    width: auto;
+    display: initial;
+}
+
+.comment-metadata {
+    width: auto;
+    display: initial;
+    margin-bottom: 5px;
+}
+
+.reply {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.comment-author .fn {
+    text-transform: uppercase;
+
+}
+
+.comment-author .fn a {
+    color: #abacae;
+}
+
+.comment-metadata a time {
+    color: #999;
+}
+
+span.edit-link a, .reply a {
+    color: #fff;
+    background: #007bff;
+    padding: 2px 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.custom-pagenation {
+    margin: 20px auto;
+}
+.stack-post-tags{
+    margin-top: 15px;
+}
+.custom-pagenation .nav-links a ,.stack-post-tags a{
+    color: #fff;
+    background: #007bff;
+    padding: 4px 8px;
+}
+.stack-post-tags a{
+    padding: 2px 8px;
+}
+.custom-pagenation .nav-links a:hover, .custom-pagenation .nav-links span.current {
+    color: #fff;
+    background: #000000;
+    padding: 4px 8px;
+}
+
+/* WordPress Core
+-------------------------------------------------------------- */
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
+}
+
+.gallery-caption {
+    font-size: 1em;
+}
+
+.bypostauthor {
+    font-size: 1em;
+}

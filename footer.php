@@ -12,22 +12,28 @@
                     <div class="social-icon text-center">
 						<?php if ( get_theme_mod( 'facebook_link' ) ) {
 							?>
-                            <a class="facebook" href="<?php esc_url( get_theme_mod( 'facebook_link' ) ) ?>"><i
+                            <a class="facebook" href="<?php echo esc_url( get_theme_mod( 'facebook_link' ) ) ?>"><i
                                         class="lni-facebook-filled"></i></a>
 							<?php
-						} ?><?php if ( get_theme_mod( 'twitter_link' ) ) {
+						} ?>
+
+                        <?php if ( get_theme_mod( 'twitter_link' ) ) {
 							?>
-                            <a class="twitter" href="<?php esc_url( get_theme_mod( 'twitter_link' ) ) ?>"><i
+                            <a class="twitter" href="<?php echo esc_url( get_theme_mod( 'twitter_link' ) ) ?>"><i
                                         class="lni-twitter-filled"></i></a>
 							<?php
-						} ?><?php if ( get_theme_mod( 'instagram_link' ) ) {
+						} ?>
+
+                        <?php if ( get_theme_mod( 'instagram_link' ) ) {
 							?>
-                            <a class="instagram" href="<?php esc_url( get_theme_mod( 'instagram_link' ) ) ?>"><i
+                            <a class="instagram" href="<?php echo esc_url( get_theme_mod( 'instagram_link' ) ) ?>"><i
                                         class="lni-instagram-filled"></i></a>
 							<?php
-						} ?><?php if ( get_theme_mod( 'linkedin_link' ) ) {
+						} ?>
+
+                        <?php if ( get_theme_mod( 'linkedin_link' ) ) {
 							?>
-                            <a class="linkedin" href="<?php esc_url( get_theme_mod( 'linkedin_link' ) ) ?>"><i
+                            <a class="linkedin" href="<?php echo esc_url( get_theme_mod( 'linkedin_link' ) ) ?>"><i
                                         class="lni-linkedin-filled"></i></a>
 							<?php
 						} ?>
@@ -36,7 +42,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-5 col-xs-12">
-                    <p class="float-right"><?php echo esc_html__( get_theme_mod( 'copyright_text' ), 'stack' ) ?></a>
+                    <p class="float-right"><?php echo esc_html( get_theme_mod( 'copyright_text' ) ) ?></a>
                     </p>
                 </div>
             </div>
